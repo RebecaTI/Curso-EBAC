@@ -1,0 +1,1 @@
+touch - é usado principalmente para criar arquivos vazios, além de alterar o registros de data e hora (timestamp) de arquivos ou pastas.
