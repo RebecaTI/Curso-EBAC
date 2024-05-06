@@ -1,3 +1,14 @@
+git config remote.origin.push HEAD
+O comando acima resolveu esse problema: fatal: The current branch master has multiple upstream branches, refusing to push
+
+Para baixar modificações do github repositorio local :
+Entrar na conta do github, ir em add file, nome do novo arquivo, e depois add commit.
+
+git pull ==> é usado para buscar e baixar conteúdo de repositórios remotos e fazer a atualização imediata ao repositório local para que os conteúdos sejam iguais.
+
+git clone link_do_repositorio  ==> é um utilitário de linha de comando que é usado para selecionar um repositório existente e criar um clone ou cópia do repositório de destino.
+
+
 POWERSHELL
 
 ls  ==> Listar o conteúdo da pasta atual
