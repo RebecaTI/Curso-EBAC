@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+        </nav>
+    </header>
+    <form>
+        <input type="text" placeholder="Seu nome" />
+        <br>
+        <label for="email">Seu e-mail</label>
+        <input id="email" type="email" placeholder="Seu e-mail">
+        <br>
+        <input type="tel" placeholder="Seu telefone">
+        <br>
+        <input type="number" max="10" min="-2" step="2"> 
+        <br>
+        <input type="file">
+        <br>
+        <input type="color">
+        <br>
+        <input id="checkbox termos" type="checkbox">
+        <label for="checkbox termos">Aceito os termos</label>
+        <p>
+            Qual sua cor favorita?
+        </p>
+        <input type="radio" name="cor-favorita" id="cor-vermelha"> <label for="cor-vermelha">Vermelho</label>
+        <input type="radio" name="cor-favorita" id="cor-verde"> <label for="cor-verde">Verde</label>
+        <input type="radio" name="cor-favorita" id="cor-azul"> <label for="cor-azul">Azul</label>
+        <br>
+        <label >Qual seu filme favorito?</label>
+        <select multiple>
+            <option>Filme A</option>
+            <option>Filme B</option>
+            <option>Filme C</option>
+        </select>
+        <br>
+        <textarea></textarea>
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            Limpar
+        </button>
+    </form>
+    <h2>Outro formulario</h2>
+    <form>
+        <label for="user">Usuario:</label>
+        <input id="user" type="text" >
+        <br>
+        <label for="senha">Senha: </label>
+        <input id="senha" type="password">
+    </form>
+</body>
+</html>
