@@ -7,8 +7,7 @@ let result = document.getElementById('result');
 form.addEventListener('submit', e => {
     e.preventDefault()
     
-    const resultadoAnaliseNumeros = analisaNumeros();
-    addTexto(resultadoAnaliseNumeros);
+    addTexto(analisaNumeros());
     limpaCampos();
 }) 
 
