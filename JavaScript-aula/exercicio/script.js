@@ -8,8 +8,8 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     
     const resultadoAnaliseNumeros = analisaNumeros();
-    // analisaNumeros();
     addTexto(resultadoAnaliseNumeros);
+    limpaCampos();
 }) 
 
 function analisaNumeros(){
@@ -30,8 +30,13 @@ function analisaNumeros(){
 }
 
 function addTexto(resultado) {
+    result.style.display='block';
     result.innerHTML = resultado;
-    
+}
+
+function limpaCampos(){
+    campoA.value = '';
+    campoB.value = '';
 }
 
 
