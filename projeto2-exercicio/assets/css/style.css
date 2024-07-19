@@ -9,6 +9,7 @@ body{
   background-image: url("../img/background.jpg");
   background-position:center;
   background-size: cover;
+
 }
 
 #phone-book-container{
@@ -33,7 +34,8 @@ body{
 
 .add__number,
 .phone-book-form,
-.cancel__add__new__contact{
+.cancel__add__new__contact,
+.edit__contact{
   padding: 1rem 0 1rem 0;
   border-bottom:1px solid #ccc;
   display:flex;
@@ -52,7 +54,8 @@ body{
   justify-content: center;
 }
 
-.phone-book-form{
+.phone-book-form,
+.edit__contact{
   justify-content: space-between;
 }
 
@@ -97,7 +100,7 @@ input{
   padding: .5rem 0 .5rem 0;
   border-bottom:1px solid #ccc;
   display:grid;
-  grid-template-columns: 3fr 3fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 3fr 1fr 1fr 1fr;
   align-items: center;
   column-gap:15px;
 }
