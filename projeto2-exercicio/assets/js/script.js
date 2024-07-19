@@ -5,6 +5,7 @@ const cancelBtn = document.querySelector('#js-cancel-add-new-contact');
 const phoneBookForm = document.querySelector('#js-phone-book-form');
 const phoneBookList = document.querySelector('#js-phone-book-list');
 const addNewContact = document.querySelector('#js-add-number');
+const contactAndNumber = document.querySelector('.phone__number');
 
 // ICONS
 const favoriteIconBtn = document.querySelectorAll('.favorite__number');
@@ -12,29 +13,52 @@ const editIconBtn = document.querySelectorAll('.edit__number');
 const blockIconBtn = document.querySelectorAll('.blocked__number');
 const removeIconBtn = document.querySelectorAll('.remove__number');
 
-
-const contactAndNumber = document.querySelector('.phone__number');
+//Valores antigos
+let oldNumeberValue;
+let oldNameValue;
 
 
 // Criar função aplyIconsFavoriteAndBlock
+// document.addEventListener('click', (e) => {
+//   const targetEl = e.target;
+//   const parentEl = targetEl.closest('div');
 
-document.addEventListener('click', (e) => {
-  const targetEl = e.target;
-  const parentEl = targetEl.closest('div');
+//   console.log(targetEl)
+//   console.log(parentEl)
 
-  console.log(targetEl)
-  console.log(parentEl)
+//   if(targetEl.classList.contains('favorite__number')){
+//     parentEl.classList.toggle('favorite')
+//   }
 
-  if(targetEl.classList.contains('favorite__number')){
-    parentEl.classList.toggle('favorite')
-  }
-
-  if(targetEl.classList.contains('blocked__number')){
-    parentEl.classList.toggle('blocked')
-  }
-});
+//   if(targetEl.classList.contains('blocked__number')){
+//     parentEl.classList.toggle('blocked')
+//   }
+// });
 
 
+
+function removeItem(){
+  document.addEventListener('click', (e) => {
+    const targetEl = e.target;
+    const parentEl = targetEl.closest('div');
+  
+    if(targetEl.classList.contains('remove__number')){
+      Swal.fire({
+        title: "Tem certeza que deseja remover?",
+        text: "Essa ação será PERMANENTE!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          parentEl.remove();
+        }
+       });
+    }
+  });
+}
 
 function addFormData(){
   phoneBookForm.addEventListener("click", (e) => {
@@ -120,6 +144,6 @@ function openAddNewContact(){
   }
 }
 
-
+removeItem()
 addFormData();
 openAddNewContact();
