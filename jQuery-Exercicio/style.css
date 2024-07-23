@@ -1,0 +1,21 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Roboto',sans-serif;
+}
+body{
+  background-color: #e9e9e9;
+}
+
+.form__container{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  padding-top: 3rem;
+}
+
+header{
+  text-align: center;
+}
