@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    /* todo conteudo que ultrapassar o tamanho da tela na horizontal não vai ser visivel */
+    overflow-x: hidden; 
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -17,15 +22,15 @@ header {
     color: #fff;
 }
 
+header > .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav {
     background-color: #575fcf;
     padding: 16px 0;
-}
-
-header > .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
 }
 
 nav li {
@@ -44,6 +49,7 @@ nav li a {
 
 .menu-hamburguer{
     width:32px;
+    cursor:pointer;
 }
 
 .menu-hamburguer span{
@@ -52,4 +58,12 @@ nav li a {
     background-color: #fff;
     display: block;
     margin-bottom: 4px; 
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img{
+    max-width: 4000px;
 }
