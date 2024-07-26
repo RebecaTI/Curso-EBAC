@@ -56,13 +56,13 @@ header{
 .submenu li{
   display:block;
   padding: 8px;
-}
+} 
 
 .conteudo {
   display:grid;
   grid-template-columns: 70% 30%;
 }
-
+   
 .noticia img{
   max-width:100%;
 }
@@ -128,6 +128,66 @@ aside .noticia{
   aside {
     padding-left: 0;
   }
+
+  header .container {
+    flex-direction:column;
+  }
+
+  .submenu{
+    display: block;
+    position:absolute;
+    width: 100%;
+    top:100%;
+
+    position: relative;
+    border:none;
+  }
+
+  .menu{
+    display:none;
+  }
+
+  .menu > li{
+    clear:both;
+  }
+
+  .submenu li{
+    display:block;
+    padding: 8px;
+  } 
+
+  .botao-menu{
+    display:flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .botao-menu button{
+    padding:8px;
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .container{
+    max-width:90%;
+  }
 
+  .botao-menu{
+    display:none;
+  }
+
+  .destaque .noticia a{
+    font-size: 1.5rem;
+  }
+
+  .noticias{
+    grid-template-columns: repeat(2, 49%);
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .botao-menu{
+    display:none;
+  }
+}
