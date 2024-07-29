@@ -1,23 +1,112 @@
+
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.display-flex{
+  display:flex;
 }
 
 .container{
-  padding:20px;
+  max-width:1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header{
+  background-color: #0e50c4;
 }
 
 header .container{
-  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 0 ;
+}
+
+header h1{
+  font-style: italic;
+  font-weight:bold;
+  font-family: 2rem;
+  color:#fff;
+}
+
+.menu__items{
+  list-style: none;
+  gap:2rem;
+}
+
+.menu__item a{
+  text-decoration: none;
+  font-weight:bold;
+  font-size: 1.3rem;
+  color:#fff;
+  position: relative;
+}
+
+.menu__item a:after{
+  position:absolute;
+  content: '';
+  left:0;
+  bottom:-4px;
+  height:2px;
+  width:0;
+  background: #fff;
+  transition: width .4s ease-out;
+}
+
+.menu__item a:hover:after{
+  width:100%;
+}
+
+@media screen and (max-width: 640px){
+  header .container{
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+ .menu__items,
+ .main__title span{
+  display:flex;
+  gap:.7rem;
   flex-direction: column;
+ }
+
+ .menu__items a{
+  font-size: 1.2em;
+ }
 }
 
- .nav-container{
-  max-width:100%;
-  
+@media screen and (min-width: 641px) and (max-width:1203px){
+  .container {
+    max-width: 90%;
+  }
+
+  header .container{
+    align-items: center;
+  }
 }
 
-.nav__menu{
-  display:none;
-} 
+
+/* SOBRE A LOJA */
+.about__store{
+  padding: 50px 0 0;
+}
+
+.about__store img{
+  width:45%;
+  float:left;
+  margin-right:30px;;
+}
+
+.title__about__store{
+  font-size: 1.5rem;
+}
+
+.about__store p{
+
+}
