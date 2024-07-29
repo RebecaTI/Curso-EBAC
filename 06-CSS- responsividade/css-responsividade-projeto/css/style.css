@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container{
+  padding:20px;
+}
+
+header .container{
+  display: flex;
+  flex-direction: column;
+}
+
+ .nav-container{
+  max-width:100%;
+  
+}
+
+.nav__menu{
+  display:none;
+} 
