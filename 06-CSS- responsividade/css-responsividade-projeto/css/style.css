@@ -62,23 +62,75 @@ header h1{
   width:100%;
 }
 
+/* SOBRE A LOJA */
+.about__store{
+  padding: 50px 0 .5rem;
+}
+
+.about__store img{
+  width:45%;
+  float:left;
+  padding-right:30px;
+}
+
+.title__about__store{
+  color: #0e50c4;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  border-bottom:1px solid #0e50c4;
+}
+
+.about__store p{
+  padding-bottom: .5rem;
+  text-indent:2rem;
+}
+
+
+/* PRODUTOS */
+.products .box__products__container{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box__product img{
+  width: 30%;
+}
+
 @media screen and (max-width: 640px){
+  .container{
+    width: 90%;
+  }
+
   header .container{
     padding: 1rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
  .menu__items,
  .main__title span{
   display:flex;
-  gap:.7rem;
+  gap:.5rem;
   flex-direction: column;
+ }
+
+ .menu__items{
+  transform: translateX(-150px);
  }
 
  .menu__items a{
   font-size: 1.2em;
  }
+
+ .about__store{
+  flex-direction: column;
+ }
+
+ .title__about__store{
+  padding-top: 1rem;
+ }
+
 }
 
 @media screen and (min-width: 641px) and (max-width:1203px){
@@ -89,24 +141,26 @@ header h1{
   header .container{
     align-items: center;
   }
+
+  .about__store{
+    flex-direction: column;
+   }
+
+  .about__store img{
+
+    /* 
+    ------------------------------
+      Não estou conseguindo estilizar a imagem
+      Esperar a resposta do professor
+    -----------------------------
+    */
+  }
+
+  .about__store div{
+    padding-top: 20px;
+  }
 }
 
 
-/* SOBRE A LOJA */
-.about__store{
-  padding: 50px 0 0;
-}
 
-.about__store img{
-  width:45%;
-  float:left;
-  margin-right:30px;;
-}
 
-.title__about__store{
-  font-size: 1.5rem;
-}
-
-.about__store p{
-
-}
