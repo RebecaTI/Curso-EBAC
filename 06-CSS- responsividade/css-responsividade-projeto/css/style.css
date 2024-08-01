@@ -32,7 +32,7 @@ header .container{
 header h1{
   font-style: italic;
   font-weight:bold;
-  font-family: 2rem;
+  font-size: 2rem;
   color:#fff;
 }
 
@@ -213,28 +213,36 @@ header h1{
   }
 
   header .container{
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .container .main__title{
+    width: 50%;
+    margin: 0 3rem 0 1rem;
   }
 
  .menu__items,
  .main__title span{
+  margin-right: 5rem;
+  width: 100%;
+  gap: .5rem;
   display:flex;
-  gap:.5rem;
   flex-direction: column;
- }
+}
 
- .menu__items{
-  transform: translateX(-150px);
- }
-
- .menu__items a{
+.menu__items a{
+  flex-wrap: nowrap;
   font-size: 1.2em;
  }
 
  .about__store{
   flex-direction: column;
+ }
+
+ .about__store img{
+  width: 100% ;
  }
 
  .title__about__store{
@@ -265,6 +273,7 @@ header h1{
    }
 
   .about__store img{
+    width: 100% ;
 
     /* 
     ------------------------------
