@@ -11,6 +11,9 @@
 
   <title>Gatinhos</title>
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <link rel="stylesheet" href="style.css">
 
   <!-- Slick -->
@@ -24,11 +27,11 @@
 
     <div class="flex">
 
-      <div class="kittys-pictures">
+      <div class="kittys-pictures" id="kitty-slick">
 
         <div class="box-picture">
 
-          <div class="image">
+          <div class="image flex">
             <img src="./images/gato1.jpg" alt="">
 
             <div class="content">
@@ -42,7 +45,7 @@
     
         <div class="box-picture">
           
-          <div class="image">
+          <div class="image flex">
             <img src="./images/gato2.jpg" alt="">
 
             <div class="content">
@@ -56,7 +59,7 @@
 
         <div class="box-picture">
           
-          <div class="image">
+          <div class="image flex">
             <img src="./images/gato3.jpg" alt="">
 
             <div class="content">
@@ -70,7 +73,7 @@
 
         <div class="box-picture">
           
-          <div class="image">
+          <div class="image flex">
             <img src="./images/gato4.jpg" alt="">
 
             <div class="content">
@@ -84,7 +87,7 @@
 
         <div class="box-picture">
           
-          <div class="image">
+          <div class="image flex">
             <img src="./images/gato5.jpg" alt="">
 
             <div class="content">
@@ -97,30 +100,71 @@
         </div>
 
       </div>
-    
-      <form id="form">
-        <div class="form-campo">
+              
+      <form id="form" class="form">
+        <div class="form-campo flex">
           <label for="nome">Nome:</label>
           <input type="text" name="nome" id="nome">
         </div>
-        <div class="form-campo">
-          <label for="idade">Idade:</label>
-          <input type="" name="nome" id="nome">
+        <div class="form-campo flex">
+          <label for="tel">Telefone:</label>
+          <input type="tel" name="tel" id="tel" placeholder="(00) 12345-6789">
         </div>
-        <div class="form-campo">
+        <div class="form-campo flex">
           <label for="email">E-mail:</label>
           <input type="email" name="email" id="email">
         </div>
-        <div class="form-campo">
+        <div class="form-campo flex">
           <label for="mensagem">Mensagem:</label>
-          <textarea name="mensagem" id="mensagem"></textarea>
+          <textarea name="mensagem" id="mensagem" placeholder="Mais alguma informação?"></textarea>
+        </div>
+
+        <div class="btn flex">
+          <button type="submit">Enviar</button>
         </div>
         
-      </form>
+      </form> 
+     
     </div>
   </div>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('#kitty-slick').slick({
+      slidesToScroll:1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+    })
+
+    $('#tel').mask('(00) 00000-0000'), {
+      placeholder: '(00) 00000-0000'
+    }
+
+    $('form').validate( {
+      rules: {
+        nome: {
+          required: true,
+        },
+        tel:{
+          required:true,
+        },
+        email:{
+          required: true,
+        }
+      },
+      messages: {
+        nome: 'Por favor, insira o seu nome',
+      }
+    })
+  });
+</script>
+
+  
 </body>
 </html>

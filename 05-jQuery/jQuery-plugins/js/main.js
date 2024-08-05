@@ -9,7 +9,7 @@ $(document).ready(function() {
   //Breve exemplo p qndo há outras opções CELULAR ou TEL-FIXO
   //let mascara = celular ? '(00) 00000-0000' : '(00) 0000-0000' ;
 
-  $('#telefone').mask('(00) 00000-0000', {
+  $('#tel').mask('(00) 00000-0000', {
       placeholder: '(00) 00000-0000'
   });
   $('#data-nascimento').mask('00/00/0000' , {    //dia / mes / ano

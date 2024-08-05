@@ -1,63 +1,94 @@
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-html{
-  background-color: #e7e7e7;
+html {
+  background-color: #ebebeb;
 }
 
-.flex{
+.flex {
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
   margin: 0 2rem;
 }
 
-header{
+header {
   margin-top: 2rem;
   padding: 2rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
-.container{
+.container {
   width: 80%;
   background-color: aliceblue;
   border-radius: 10px;
   margin: auto;
+  padding-bottom: 4rem;
 }
 
+.kittys-pictures {
+  width: 40%;
+}
 
-.box-picture .image{
+.kittys-pictures img {
+  width: 70%;
+  height: auto;
+}
+
+.box-picture .image {
   position: relative;
 }
 
-.image img{
-  width:60%;
+img {
+  width: 70%;
   border-radius: 150px 20px 40% 0px;
 }
 
-.box-picture .content p{
+.box-picture .content p {
   position: absolute;
   z-index: 1;
-  bottom:40px;
-  left: 20px;
+  bottom: 20px;
+  left: 30%;
   color: #ccc;
   font-weight: bold;
   font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, .5);
-  padding: .5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
   border-radius: 10%;
 }
 
-.box-picture .content i{
+.box-picture .content i {
   font-size: 2rem;
   background-color: rgba(196, 48, 198, 0.5);
-  color:#ccc;
-  padding: .5rem;
+  color: #ccc;
+  padding: 0.5rem;
   border-radius: 100%;
   position: absolute;
   top: 10px;
-  right:45%;
+  right: 27%;
+}
+
+.form-campo {
+  flex-direction: column;
+  padding: 0.7rem;
+}
+
+.form-campo label {
+  align-content: flex-start;
+  text-align: left;
+  margin-bottom: 0.3rem;
+}
+
+.form-campo textarea#mensagem {
+  resize: none;
+  height: 120px;
+}
+
+button {
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 0.7rem;
 }

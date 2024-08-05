@@ -243,6 +243,7 @@ header h1{
 
  .about__store img{
   width: 100% ;
+  margin: auto;
  }
 
  .title__about__store{
@@ -274,13 +275,6 @@ header h1{
 
   .about__store img{
     width: 100% ;
-
-    /* 
-    ------------------------------
-      Não estou conseguindo estilizar a imagem
-      Esperar a resposta do professor
-    -----------------------------
-    */
   }
 
   .about__store div{
