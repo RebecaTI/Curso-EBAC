@@ -1,0 +1,9 @@
+Bootstrap
+col-sm-12  
+Para telas peqnas. 
+
+col-lg-8
+Para telas grandes
+
+g-0
+Para tirar o padding
