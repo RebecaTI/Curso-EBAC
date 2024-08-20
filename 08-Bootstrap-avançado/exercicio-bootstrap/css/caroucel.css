@@ -1,0 +1,16 @@
+.card {
+  cursor: pointer;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #a9a9a9;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+}
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+}
