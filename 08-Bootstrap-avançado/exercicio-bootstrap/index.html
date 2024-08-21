@@ -20,7 +20,7 @@
   </head>
   <body>
     <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5 py-3 border-bottom text-bg-dark"
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5 py-3 border-bottom text-bg-dark fixed-top"
     >
       <div class="col-md-3 mb-2 mb-md-0">
         <span>Animes</span>
@@ -90,11 +90,11 @@
       </div>
     </header>
 
-    <main>
+    <main class="pt-5">
       <!-- Caroucel Large device -->
       <div
         id="carouselLargeDevices"
-        class="carousel slide bg-dark d-none d-sm-block"
+        class="carousel slide bg-dark d-none d-xl-block d-lg-block py-5"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
@@ -167,75 +167,67 @@
       </div>
 
       <!-- Caroucel Tablet device -->
-
-      <!-- Caroucel Small device -->
       <div
-        id="carouselSmallDevice"
-        class="carousel slide bg-dark d-sm-none"
+        id="carouselTabletDevices"
+        class="carousel slide bg-dark d-none d-md-block d-sm-block d-lg-none mt-5 py-5"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
+          <div class="active carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
                 <img src="./img/slide-1.jpeg" class="h-100 w-100" alt="..." />
               </div>
-            </div>
-          </div>
 
-          <div class="carousel-item">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
+              <div class="card mx-2">
                 <img src="./img/slide-2.webp" class="h-100 w-100" alt="..." />
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
-                <img src="./img/slide-3.jpg" class="h-100 w-100" alt="" />
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-3.jpg" class="h-100 w-100" alt="..." />
+              </div>
+
+              <div class="card mx-2">
+                <img src="./img/slide-4.webp" class="h-100 w-100" alt="..." />
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
-                <img src="./img/slide-4.webp" class="h-100 w-100" alt="" />
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-5.jpg" class="h-100 w-100" alt="..." />
+              </div>
+
+              <div class="card mx-2">
+                <img src="./img/slide-6.jpg" class="h-100 w-100" alt="..." />
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
-                <img src="./img/slide-5.jpg" class="h-100 w-100" alt="" />
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-7.avif" class="h-100 w-100" alt="..." />
+              </div>
+
+              <div class="card mx-2">
+                <img src="./img/slide-8.avif" class="h-100 w-100" alt="..." />
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
-                <img src="./img/slide-6.jpg" class="h-100 w-100" alt="" />
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-9.avif" class="h-100 w-100" alt="..." />
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
-                <img src="./img/slide-7.avif" class="h-100 w-100" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
-                <img src="./img/slide-8.avif" class="h-100 w-100" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card mx-5 my-3">
-              <div class="image-wrapper">
-                <img src="./img/slide-9.avif" class="h-100 w-100" alt="" />
+              <div class="card mx-2">
+                <img src="./img/slide-6.jpg" class="h-100 w-100" alt="..." />
               </div>
             </div>
           </div>
@@ -243,7 +235,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselSmallDevice"
+          data-bs-target="#carouselTabletDevices"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -252,7 +244,106 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselSmallDevice"
+          data-bs-target="#carouselTabletDevices"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Caroucel Small device -->
+      <div
+        id="carouselSmallDevices"
+        class="carousel slide bg-dark d-block d-sm-none pt-5 mt-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="active carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-1.jpeg" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-2.webp" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-3.jpg" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-4.webp" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-5.jpg" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-6.jpg" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-7.avif" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-8.avif" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="cards-wrapper mx-5 px-5 my-3">
+              <div class="card mx-2">
+                <img src="./img/slide-9.avif" class="h-100 w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselSmallDevices"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselSmallDevices"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -262,42 +353,92 @@
 
       <!-- Content -->
 
-      <div class="bg-dark p-5 border-top">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="./img/Jujutsu-Kaisen.webp"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Responsive left-aligned hero with image
+      <section class="py-1 pb-5 text-center container">
+        <div class="row pt-lg-3">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">
+              Episodios de <span class="text-primary">Jujutsu-Kaisen</span>
             </h1>
-            <p class="lead">
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world’s most popular front-end open source toolkit,
-              featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                Primary
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
-              >
-                Default
-              </button>
+            <div class="row my-3">
+              <img src="./img/Jujutsu-Kaisen.webp" class="mx-auto" alt="" />
             </div>
           </div>
         </div>
-      </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 pt-4">
+          <div class="col">
+            <div class="card shadow-sm text-bg-dark">
+              <img src="./img/jujutsu-kaisen1.webp" alt="" />
+              <div class="card-img-overlay">
+                <h4 class="card-tittle">ep. 1</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm text-bg-dark">
+              <img src="./img/jujutsu-kaisen1.webp" alt="" />
+              <div class="card-img-overlay">
+                <h4 class="card-tittle">ep. 2</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm text-bg-dark">
+              <img src="./img/jujutsu-kaisen1.webp" alt="" />
+              <div class="card-img-overlay">
+                <h4 class="card-tittle">ep. 3</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm text-bg-dark">
+              <img src="./img/jujutsu-kaisen1.webp" alt="" />
+              <div class="card-img-overlay">
+                <h4 class="card-tittle">ep. 4</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm text-bg-dark">
+              <img src="./img/jujutsu-kaisen1.webp" alt="" />
+              <div class="card-img-overlay">
+                <h4 class="card-tittle">ep. 5</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm text-bg-dark">
+              <img src="./img/jujutsu-kaisen1.webp" alt="" />
+              <div class="card-img-overlay">
+                <h4 class="card-tittle">ep. 6</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm text-bg-dark">
+              <img src="./img/jujutsu-kaisen1.webp" alt="" />
+              <div class="card-img-overlay">
+                <h4 class="card-tittle">ep. 7</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm text-bg-dark">
+              <img src="./img/jujutsu-kaisen1.webp" alt="" />
+              <div class="card-img-overlay">
+                <h4 class="card-tittle">ep. 8</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
