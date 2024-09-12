@@ -1,0 +1,63 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #FEF7ED;
+}
+
+.nav-bar {
+  background: #FEF7ED;
+}
+
+.content-font {
+  font-family: "Open Sans", sans-serif;
+  color: #3A54B4;
+}
+
+.nav-icon {
+  width: 24px
+}
+
+.title-font {
+  font-family: "Playwrite CU", cursive;
+  color: #3A54B4;
+}
+
+#header .nav .nav-link.active {
+  color: #f86b58;
+}
+
+.nav-btn {
+  background: #3A54B4;
+  transition: .5s;
+}
+
+.nav-btn:hover {
+  background: #8896CD;
+}
+
+.image-dog {
+  width: 100%;
+}
+
+.bg-overlay {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: #8896CD;
+  border-radius: 50%;
+  top: 40%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+}
+
+#about,
+#avaible-animals {
+  background: #FFF;
+}
+
+.image-woman-dog {
+  width: 60%;
+}
+
+#about p {
+  text-indent: 1.5em;
+}
