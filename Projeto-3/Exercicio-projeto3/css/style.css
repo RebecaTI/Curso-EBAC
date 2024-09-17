@@ -3,8 +3,22 @@ body {
   background-color: #FEF7ED;
 }
 
-.nav-bar {
+.nav-bar,
+.nav-animals.active,
+.content-animals {
   background: #FEF7ED;
+}
+
+.nav-animals.active {
+  color: #f86b58;
+  border: 2px solid #f86b58;
+  border-bottom: #FEF7ED;
+  border-radius: 10px;
+}
+
+.content-animals {
+  border: 2px solid #f86b58;
+  border-radius: 10px;
 }
 
 .content-font {
@@ -40,22 +54,18 @@ body {
 
 .bg-overlay {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   background-color: #8896CD;
   border-radius: 50%;
-  top: 40%;
-  left: 67%;
+  top: 50%;
+  left: 70%;
   transform: translate(-50%, -50%);
 }
 
 #about,
 #avaible-animals {
   background: #FFF;
-}
-
-.image-woman-dog {
-  width: 60%;
 }
 
 #about p {
