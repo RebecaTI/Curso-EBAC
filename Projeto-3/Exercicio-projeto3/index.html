@@ -23,7 +23,53 @@
 </head>
 
 <body>
-  <div class="nav-bar fixed-top z-3 pb-0">
+
+  <nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary fixed-top z-3 pb-0">
+    <div class="container">
+      <a href="/"
+        class="navbar-brand d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="nav-icon me-2" src="./images/pata-de-animal.png" alt="">
+        <span class="title-font">Cats & Dogs</h1>
+      </a>
+      <button class="navbar-toggler nav-botao" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div class="nav-bar fixed-top z-3 pb-0">
     <div class="container ">
       <header class="d-flex flex-wrap justify-content-center py-3  border-bottom " id="header">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -43,7 +89,7 @@
         </ul>
       </header>
     </div>
-  </div>
+  </div> -->
 
   <div data-bs-spy="scroll" data-bs-target="header" data-bs-smoth-scroll="true">
     <section id="home-page">
@@ -56,11 +102,11 @@
               visita</button>
           </div>
 
-          <div class="col-12 col-lg-6 py-2" data-aos="fade-left" data-aos-duration="600">
+          <div class="col-12 col-lg-6 py-2">
             <div class=" position-relative"></div>
             <img
               src="./images/gato-domestico-cinza-fofo-com-cabelo-comprido-mostrando-sua-afeicao-por-um-cachorro-marrom-com-cabelo-comprido.png"
-              alt="" class="image-dog hero-img d-block mx-auto z-1">
+              alt="" class="image-dog hero-img d-block mx-auto z-1" data-aos="fade-left" data-aos-duration="600">
             <div class="bg-overlay z-n1"> </div>
           </div>
         </div>
@@ -153,17 +199,17 @@
 
             <div class="tab-pane" id="adult-dogs">
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="300">
                   <img src="./images/cao/foto-1.jpg" alt="" class="d-block w-100">
                   <h5></h5>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="600">
                   <img src="./images/cao/foto-2.jpg" alt="" class="d-block w-100">
                   <h5></h5>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up" data-aos-duration="900">
                   <img src="./images/cao/foto-3.webp" alt="" class="d-block w-100">
                   <h5></h5>
                 </div>

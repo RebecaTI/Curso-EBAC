@@ -6,7 +6,12 @@ body {
 .nav-bar,
 .nav-animals.active,
 .content-animals {
-  background: #FEF7ED;
+  background: #FEF7ED !important;
+}
+
+.nav-botao {
+  color: #f86b58;
+  border: solid #f86b58;
 }
 
 .nav-animals.active {
