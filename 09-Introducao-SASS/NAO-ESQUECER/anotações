@@ -1,7 +1,0 @@
-npm init
-dar enter p tudo
-
-npm i --save-dev sass
-
-npm run dass input.scss output.css
-Tem q colocar o arquivo de input q é um scss e o output é o css
