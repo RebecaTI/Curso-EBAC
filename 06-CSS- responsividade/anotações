@@ -1,7 +1,0 @@
-P tratar se o dispositivo esta na horizontal ou vertical
-
-@media screen and(orientation: portrait)
-seria p retrato
-
-@media screen and(orientation: landscape)
-P horizontal
