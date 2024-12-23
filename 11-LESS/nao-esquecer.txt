@@ -1,0 +1,5 @@
+npm i -g less-watch-compiler
+
+npm i --save-dev less-watch-compiler
+
+npm run less
