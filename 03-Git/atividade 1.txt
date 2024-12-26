@@ -1,0 +1,5 @@
+HTML, CSS e JavaScript são as tecnologias fundamentais que formam a base da web, cada uma desempenhando um papel único no desenvolvimento de páginas e aplicativos web.
+Um exemplo ludico de como cada uma dessas ferramentas atuam:
+HTML é como o esqueleto, em que irá sustentar todo o conteudo.
+CSS é como a pele, roupas... Está ligado a parte visual da página.
+JavaScript é como os musculos, em que dará movimento, vida a página e tbm responde as ações do usuario.

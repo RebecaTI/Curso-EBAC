@@ -1,0 +1,14 @@
+git log   ==> visualizar o histórico de commits 
+git log -n 2   ==> retorna os 2 ultimos commits feitos
+git log --oneline  ==> visualizar uma versão resumida do registro de commits
+git log --stat   ==> visualizar o registro de uma forma mais detalhada solicitando o conteúdo da alteração
+git log -n 3 --oneline  ==> É possível combinar as variações, solicitamos o conteúdo de dois registros com apenas o identificador do commit
+git restore nome_do_arquivo   =>  É usado para descartar as alterações feitas em um arquivo específico, restaurando-o para o estado em que estava no último commit.
+git checkout ./nome_do_arquivo  => Para desfazer alterações em arquivos que ainda não foram adicionados ao stage
+git checkout COMMIT_ID   ==> podemos viajar no tempo, para o passado, podemos voltar o conteúdo de um repositório para o conteúdo de um determinado commit
+git revert HEAD COMMIT_ID ==>  podemos viajar no tempo, para o passado, podemos voltar o conteúdo de um repositório para o conteúdo de um determinado commit
+git branch   => Para visualizar todas as branches que fazem parte do repositório
+git branch nome_da_nova_branch  ==> Para criar uma nova branch
+git checkout -b nome_da_nova_branch  ==> Cria nova branch e ja se move p ela
+git branch nome_da_nova_branch master   ==> Para criar uma branch apontando a referencia da sua branch original (pegando o conteudo)
+git branch -D nome_da_branch  ==> Para deletar uma branch
