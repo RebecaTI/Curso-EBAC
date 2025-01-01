@@ -1,0 +1,5 @@
+npm run gulp watch
+
+Obfuscação, é p tornar o codigo ilegivel p outros programadores. P n copiarem seu codigo
+p instalar:
+npm install --save-dev gulp-obfuscate
