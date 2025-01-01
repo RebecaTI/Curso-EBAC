@@ -1,0 +1,15 @@
+@use '../config/variaveis.scss';
+
+header {
+  background-color: variaveis.$corSecundaria;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
