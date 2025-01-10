@@ -1,0 +1,4 @@
+O q é Grunt?
+é uma ferramente para automação de tarefas. Podemos compilar SASS, LESS, fazer compressão de imagens e arquivos
+
+Documentação Grunt:   https://gruntjs.com/getting-started
