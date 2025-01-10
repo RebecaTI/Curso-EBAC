@@ -1,0 +1,1 @@
+import ValidarCpf from"./validar-cpf.js";let cpf=document.querySelector("#cpf"),validarCpf=new ValidarCpf(cpf).iniciar(),validadorCPF=new ValidarCpf;console.log(validadorCPF.validar("111 111 111 11")),console.log(validarCpf);
